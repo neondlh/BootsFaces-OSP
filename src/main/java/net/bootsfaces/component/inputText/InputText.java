@@ -144,20 +144,6 @@ public String getFamily() {
 	}
 
 	/**
-	 * Show the words of the input text as tags (similar to price tags in the supermarket). You can select one or more tags. The list is sent to the backend bean as a comma-separated list. <P>
-	 * Usually this method is called internally by the JSF engine.
-	 */
-	public void setTags(boolean _tags) {
-		if (_tags) {
-			AddResourcesListener.addResourceToHeadButAfterJQuery(C.BSF_LIBRARY, "js/bootstrap-tagsinput.min.js");
-			AddResourcesListener.addExtCSSResource("bootstrap-tagsinput.css");
-			AddResourcesListener.addExtCSSResource("bootstrap-tagsinput-typeahead.css");
-			AddResourcesListener.addExtCSSResource("input-tags.css");
-		}
-		super.setTags(_tags);
-	}
-
-	/**
 	 * Activates the type-ahead aka autocomplete function. The list of values has to be defined in typeahead-values. <P>
 	 * Usually this method is called internally by the JSF engine.
 	 */
